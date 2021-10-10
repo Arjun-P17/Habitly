@@ -1,9 +1,5 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
-import App from '../components/App'
+import App from "../pages/App";
 
 export default function Home() {
-  return (
-    <App />
-  )
+  return <App />;
 }

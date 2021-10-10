@@ -15,14 +15,6 @@ a {
   box-sizing: border-box;
 }
 
-.header {
-  width: 100%;
-  padding: 2%;
-  background-color: rgb(231, 110, 28);
-  color: white;
-  text-align: center;
-}
-
 .display-board {
   width: 100%;
   background-color: rgb(555, 200, 789);
