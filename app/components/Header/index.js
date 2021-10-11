@@ -15,7 +15,7 @@ export const Header = () => {
           <Nav className="me-auto ">
             <Nav.Link href="/Water">Water</Nav.Link>
             <Nav.Link href="#Meals">Meals</Nav.Link>
-            <Nav.Link href="#Exercise">Exercise</Nav.Link>
+            <Nav.Link href="/Exercise">Exercise</Nav.Link>
             <Nav.Link href="#Reading">Reading</Nav.Link>
             <Nav.Link href="#Entertainment">Entertainment</Nav.Link>
             {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">

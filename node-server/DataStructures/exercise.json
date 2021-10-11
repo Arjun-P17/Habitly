@@ -1,0 +1,25 @@
+{
+    "workouts": [
+        {
+            "id": "id number",
+            "name": "Workout 1",
+            "type": "Cardio or Weights",
+            "duration": "some time unit",
+            "exercises": [
+                {
+                    "name": "exercise name",
+                    "sets": 1,
+                    "reps": 4
+                }
+            ]
+
+        }
+    ],
+    "history": [
+        {
+            "date": "date string",
+            "Workout_id": "id",
+            "duration":"some time unit" 
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+.base {
+  background-color: rgb(228, 195, 195);
+  min-height: 100vh;
+}
+
+.body {
+  padding: 55px;
+
+  .workouts {
+    padding-top: 20px;
+    width: 100%;
+  }
+}

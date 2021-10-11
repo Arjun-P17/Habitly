@@ -11,3 +11,17 @@ export async function createUser(data) {
   });
   return await response.json();
 }
+
+export async function getUserDrinks() {
+  const response = await fetch("/api/getUserDrinks");
+  return await response.json();
+}
+
+export async function addDrink(data) {
+  const response = await fetch(`/api/addDrink`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ drinkData: data }),
+  });
+  return await response.json();
+}
