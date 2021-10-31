@@ -1,13 +1,75 @@
 .base {
-  background-color: rgb(228, 195, 195);
-  min-height: 100vh;
+    background-color: rgb(203, 224, 241);
+    min-height: 100vh;
 }
 
-.body {
-  padding: 55px;
+$screen-xl-min: 950px;
+$screen-xxl-min: 1600px;
 
-  .workouts {
-    padding-top: 20px;
+.body {
+    padding: 55px 40px 55px 55px;
     width: 100%;
-  }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .workouts {
+        padding-top: 20px;
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+
+        @media (min-width: #{$screen-xl-min}) {
+            padding: 0 50px;
+            padding-top: 20px;
+        }
+
+        @media (min-width: #{$screen-xxl-min}) {
+            padding: 0 150px;
+            padding-top: 20px;
+        }
+
+        .tile-container {
+            margin-right: 15px;
+            margin-bottom: 15px;
+            border: none;
+            background-color: transparent;
+
+            .add-workout {
+                position: relative;
+                height: 276px;
+                overflow-y: auto;
+                width: 200px;
+                background-color: white;
+                border-radius: 0.4rem;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+                box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+                padding: 15px;
+                text-align: center;
+
+                .icon {
+                    padding-top: 100px;
+                    padding-bottom: 10px;
+                }
+
+                .text {
+                    line-height: 20px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .exercise-tracker {
+        padding: 25px 25px 25px 25px;
+        border-radius: 5px;
+        background-color: white;
+
+        @media (min-width: #{$screen-xl-min}) {
+            width: 775px;
+        }
+    }
 }

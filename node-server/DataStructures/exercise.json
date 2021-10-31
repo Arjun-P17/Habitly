@@ -17,9 +17,10 @@
     ],
     "history": [
         {
-            "date": "date string",
-            "Workout_id": "id",
-            "duration":"some time unit" 
+            "start": "date string",
+            "time": "time string",
+            "workoutID": "number",
+            "workoutName": "string"
         }
     ]
 }

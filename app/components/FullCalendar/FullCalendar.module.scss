@@ -1,0 +1,7 @@
+.calendar {
+    :global {
+        .fc .fc-daygrid-day.fc-day-today {
+            background-color: lightblue !important;
+        }
+    }
+}
