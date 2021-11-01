@@ -1,58 +1,61 @@
 const express = require("express");
 const path = require("path");
+const fs = require("fs");
 const app = express(),
     bodyParser = require("body-parser");
 port = 3080;
 
-// Drink Data Structure
-const userDrinkData = {
-    history: [],
-};
-
-const exercise = {
-    workouts: [],
-    history: [],
-};
-
-const user = {
-    drinkData: userDrinkData,
-    exerciseData: exercise,
-};
-
 // place holder for the data
-const users = [user];
+const users = [];
 
 app.use(bodyParser.json());
 // app.use(express.static(path.join(__dirname, '../my-app/out')));
 
 // Drink API calls
 app.get("/api/getUserDrinks", (req, res) => {
-    res.json(users[0].drinkData);
+    let rawdata = fs.readFileSync("./Data/data.json");
+    let user = JSON.parse(rawdata);
+    res.json(user.drinkData);
 });
 
 app.post("/api/addDrink", (req, res) => {
     const drinkData = req.body.drinkData;
-    console.log("Adding drink data", drinkData);
-    userDrinkData.history.push(drinkData);
+    // console.log("Adding drink data", drinkData);
+    let rawdata = fs.readFileSync("./Data/data.json");
+    let user = JSON.parse(rawdata);
+    user.drinkData.history.push(drinkData);
+    let data = JSON.stringify(user);
+    // console.log(data);
+    fs.writeFileSync("./Data/data.json", data);
     res.json("Drink Added");
-    console.log(users);
-    console.log(userDrinkData);
 });
 
 // Exercise API calls
 app.get("/api/getExerciseData", (req, res) => {
-    res.json(users[0].exerciseData);
+    let rawdata = fs.readFileSync("./Data/data.json");
+    let user = JSON.parse(rawdata);
+    res.json(user.exerciseData);
 });
 
 app.post("/api/addWorkout", (req, res) => {
     const workoutData = req.body.workoutData;
-    exercise.workouts.push(workoutData);
+    let rawdata = fs.readFileSync("./Data/data.json");
+    let user = JSON.parse(rawdata);
+    user.exerciseData.workouts.push(workoutData);
+    let data = JSON.stringify(user);
+    // console.log(data);
+    fs.writeFileSync("./Data/data.json", data);
     res.json("Workout Added");
 });
 
 app.post("/api/addWorkoutToHistory", (req, res) => {
     const workoutData = req.body.workoutData;
-    exercise.history.push(workoutData);
+    let rawdata = fs.readFileSync("./Data/data.json");
+    let user = JSON.parse(rawdata);
+    user.exerciseData.history.push(workoutData);
+    let data = JSON.stringify(user);
+    // console.log(data);
+    fs.writeFileSync("./Data/data.json", data);
     res.json("Workout Added to History");
 });
 

@@ -7,7 +7,7 @@ $screen-xl-min: 950px;
 $screen-xxl-min: 1600px;
 
 .body {
-    padding: 55px 40px 55px 55px;
+    padding: 30px 40px 40px 55px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -64,12 +64,12 @@ $screen-xxl-min: 1600px;
     }
 
     .exercise-tracker {
-        padding: 25px 25px 25px 25px;
+        padding: 20px 25px 25px 25px;
         border-radius: 5px;
         background-color: white;
 
         @media (min-width: #{$screen-xl-min}) {
-            width: 775px;
+            width: 860px;
         }
     }
 }

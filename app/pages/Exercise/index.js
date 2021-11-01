@@ -84,7 +84,6 @@ const Exercise = () => {
             workoutID: workoutID,
             workoutName: workoutName,
         };
-        console.log(newWorkoutHistory);
         addUserWorkoutHistory(newWorkoutHistory);
         setWorkoutHistoryModalShow(false);
     };
@@ -92,10 +91,6 @@ const Exercise = () => {
     useEffect(() => {
         getUserExerciseData();
     }, []);
-
-    useEffect(() => {
-        console.log(workoutHistory);
-    }, [workoutHistory]);
 
     useEffect(() => {
         if (userExerciseData?.workouts) {

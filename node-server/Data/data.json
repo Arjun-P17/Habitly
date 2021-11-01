@@ -1,0 +1,109 @@
+{
+    "drinkData": {
+        "history": [
+            {
+                "date": "Tue Nov 02 2021 00:17:40 GMT+1100 (Australian Eastern Daylight Time)",
+                "type": "Water",
+                "amount": "200"
+            },
+            {
+                "date": "Tue Nov 02 2021 00:19:44 GMT+1100 (Australian Eastern Daylight Time)",
+                "type": "Water",
+                "amount": "200"
+            },
+            {
+                "date": "Tue Nov 02 2021 00:25:55 GMT+1100 (Australian Eastern Daylight Time)",
+                "type": "Water",
+                "amount": "250"
+            }
+        ]
+    },
+    "exerciseData": {
+        "workouts": [
+            {
+                "id": 1,
+                "type": "Lifting",
+                "name": "Push v1",
+                "duration": "1 Hour",
+                "exercises": [
+                    { "name": "Bench Press", "sets": "3", "reps": "5" },
+                    { "name": "Incline DB Press", "sets": "3", "reps": "8" },
+                    { "name": "Cable Flys", "sets": "3", "reps": "8" },
+                    { "name": "Shoulder DB Press", "sets": "3", "reps": "8" },
+                    { "name": "Tricep Extenstions", "sets": "3", "reps": "8" },
+                    { "name": "Dips", "sets": "3", "reps": "8" },
+                    { "name": "Lateral Raises", "sets": "3", "reps": "8" }
+                ]
+            },
+            {
+                "id": 2,
+                "type": "Lifting",
+                "name": "Pull v1",
+                "duration": "1 Hour",
+                "exercises": [
+                    { "name": "Barbell Rows", "sets": "3", "reps": "7" },
+                    { "name": "Lat Pulldown", "sets": "3", "reps": "8" },
+                    {
+                        "name": "Close Grip Cable Row",
+                        "sets": "3",
+                        "reps": "8"
+                    },
+                    {
+                        "name": "Close Grip Pulldowns",
+                        "sets": "3",
+                        "reps": "8"
+                    },
+                    { "name": "Rear Delt Flys", "sets": "3", "reps": "8" },
+                    { "name": "Curls", "sets": "3", "reps": "8" }
+                ]
+            },
+            {
+                "id": 3,
+                "type": "Lifting",
+                "name": "Pull v2",
+                "duration": "1 Hour",
+                "exercises": [
+                    { "name": "Pull Ups", "sets": "3", "reps": "6" },
+                    { "name": "DB Rows", "sets": "3", "reps": "8" },
+                    {
+                        "name": "Wide Grip Cable Row ",
+                        "sets": "3",
+                        "reps": "8"
+                    },
+                    { "name": "Underhand Pulldowns", "sets": "3", "reps": "8" },
+                    { "name": "Cable Face Pulls", "sets": "3", "reps": "8" },
+                    { "name": "Hammer Curls", "sets": "3", "reps": "8" }
+                ]
+            },
+            {
+                "id": 4,
+                "type": "Lifting",
+                "name": "Legs v1",
+                "duration": "1 Hour",
+                "exercises": [
+                    { "name": "Barbell Squat", "sets": "3", "reps": "6" },
+                    { "name": "Deadlift", "sets": "3", "reps": "7" },
+                    { "name": "Hip Thrusts", "sets": "3", "reps": "7" },
+                    { "name": "Leg Extensions", "sets": "3", "reps": "8" },
+                    { "name": "Lying Leg Curls", "sets": "3", "reps": "8" },
+                    { "name": "Standing Calf Raises", "sets": "3", "reps": "8" }
+                ]
+            },
+            {
+                "id": 5,
+                "type": "Lifting",
+                "name": "Legs v2",
+                "duration": "1 Hour",
+                "exercises": [
+                    { "name": "Back Extensions", "sets": "3", "reps": "6" },
+                    { "name": "Barbell Squat", "sets": "3", "reps": "6" },
+                    { "name": "DB Lunges", "sets": "3", "reps": "10" },
+                    { "name": "Leg Extensions", "sets": "3", "reps": "8" },
+                    { "name": "Lying Leg Curls", "sets": "3", "reps": "8" },
+                    { "name": "Standing Calf Raises", "sets": "3", "reps": "8" }
+                ]
+            }
+        ],
+        "history": []
+    }
+}

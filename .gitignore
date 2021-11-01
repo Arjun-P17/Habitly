@@ -1,3 +1,6 @@
+# user data
+./node-server/Data/data.json
+
 # Logs
 logs
 *.log

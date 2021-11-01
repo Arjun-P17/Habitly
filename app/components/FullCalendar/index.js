@@ -44,13 +44,15 @@ export default function FullCalendar({
     const [exerciseHistory, setExerciseHistory] = useState([]);
 
     useEffect(() => {
+        const tmpExerciseHistory = [];
         workoutHistory.forEach((workout) => {
             const exerciseEntry = {
                 title: workout.workoutName,
                 start: `${workout.start}T${workout.time}`,
             };
-            setExerciseHistory([...exerciseHistory, exerciseEntry]);
+            tmpExerciseHistory.push(exerciseEntry);
         });
+        setExerciseHistory(tmpExerciseHistory);
     }, [workoutHistory]);
 
     const dateClick = (info) => {
