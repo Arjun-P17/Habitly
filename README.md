@@ -16,7 +16,7 @@ $ cd ./app
 $ npm run dev
 ```
 
-
+## App Overview
 
 Habity is a web app that tracks a collection of habits (Exercise, Diet, Reading, Meditation, Entertainment). Currently only exercise tracking is implemented as pictured below.
 
