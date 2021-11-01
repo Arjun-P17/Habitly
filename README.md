@@ -3,7 +3,7 @@
 Habity is an app to track a collection of habits (Exercise, Diet, Reading, Meditation, Entertainment). It is a NEXT.js app with a NodeJS Backend. Exercise tracking has been implemented, the rest are in development.
 
 ## How to run the app
-Run the commands as below, only the dev scripts are currently implemented.
+Run the commands as below, only the dev scripts are currently available.
 
 To run the server
 ```console
