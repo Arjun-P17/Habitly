@@ -1,6 +1,6 @@
-# Habitly - A habit tracking site
+# Habitly
 
-Habity is a web app that tracks a collection of habits (Exercise, Diet, Reading, Meditation, Entertainment). It is a NEXT.js app with a NodeJS Backend.
+Habity is an app to track a collection of habits (Exercise, Diet, Reading, Meditation, Entertainment). It is a NEXT.js app with a NodeJS Backend.
 
 ## How to run the app
 Run the commands as below, only the dev scripts are currently implemented.
